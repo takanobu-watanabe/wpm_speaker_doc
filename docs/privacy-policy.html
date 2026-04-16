@@ -62,6 +62,26 @@
             padding: 15px;
             margin: 20px 0;
         }
+        h4 {
+            color: #777;
+            margin-top: 15px;
+        }
+        .lang-toggle {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .lang-toggle a {
+            display: inline-block;
+            padding: 8px 16px;
+            margin: 0 5px;
+            background-color: #007AFF;
+            color: white;
+            border-radius: 5px;
+        }
+        .lang-toggle a:hover {
+            background-color: #0051D5;
+            text-decoration: none;
+        }
         .footer {
             margin-top: 50px;
             padding-top: 20px;
@@ -73,99 +93,204 @@
     </style>
 </head>
 <body>
-    <h1>プライバシーポリシー</h1>
+    <h1>プライバシーポリシー / Privacy Policy</h1>
 
     <div class="last-updated">
-        <strong>最終更新日:</strong> 2026年4月17日
+        <strong>最終更新日 / Last Updated:</strong> 2026年4月17日 / April 17, 2026
     </div>
 
-    <p>「WPM英語スピーキング」（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。本プライバシーポリシーは、本アプリが収集する情報とその利用方法について説明します。</p>
-
-    <div class="section">
-        <h2>1. 収集する情報</h2>
-
-        <h3>1.1 アカウント情報</h3>
-        <ul>
-            <li>Apple Sign Inを通じて取得するユーザーID</li>
-            <li>メールアドレス（Apple Sign Inで提供された場合）</li>
-        </ul>
-
-        <h3>1.2 音声・テキストデータ</h3>
-        <ul>
-            <li>スピーキング練習時の音声認識によるテキストデータ</li>
-            <li>音声データはデバイス上でのみ処理され、サーバーには保存されません</li>
-        </ul>
-
-        <h3>1.3 学習データ</h3>
-        <ul>
-            <li>スピーキング速度（WPM）</li>
-            <li>練習履歴</li>
-            <li>AI評価結果</li>
-        </ul>
-
-        <h3>1.4 購入情報</h3>
-        <ul>
-            <li>サブスクリプションの購入状況（RevenueCatを通じて管理）</li>
-        </ul>
+    <div class="lang-toggle">
+        <a href="#japanese">日本語</a>
+        <a href="#english">English</a>
     </div>
 
-    <div class="section">
-        <h2>2. 情報の利用目的</h2>
-        <p>収集した情報は以下の目的で利用します：</p>
-        <ul>
-            <li>ユーザー認証とアカウント管理</li>
-            <li>スピーキング内容のAI評価（Google Gemini APIを使用）</li>
-            <li>学習履歴の記録と表示</li>
-            <li>サブスクリプションの管理</li>
-            <li>アプリの改善</li>
-        </ul>
-    </div>
+    <!-- 日本語版 -->
+    <section id="japanese">
+        <h2>日本語版</h2>
 
-    <div class="section">
-        <h2>3. 第三者への情報提供</h2>
-        <p>本アプリは以下のサービスを利用しています：</p>
-        <ul>
-            <li><strong>Firebase（Google）</strong>: 認証、クラウド機能</li>
-            <li><strong>Google Gemini API</strong>: スピーキング内容の評価（テキストデータのみ送信）</li>
-            <li><strong>RevenueCat</strong>: サブスクリプション管理</li>
-            <li><strong>Apple</strong>: Sign In、App Store決済</li>
-        </ul>
-        <div class="important">
-            <strong>これらのサービス提供者以外の第三者に個人情報を販売・提供することはありません。</strong>
+        <p>「WPM英語スピーキング」（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。本プライバシーポリシーは、本アプリが収集する情報とその利用方法について説明します。</p>
+
+        <div class="section">
+            <h3>1. 収集する情報</h3>
+
+            <h4>1.1 アカウント情報</h4>
+            <ul>
+                <li>Apple Sign Inを通じて取得するユーザーID</li>
+                <li>メールアドレス（Apple Sign Inで提供された場合）</li>
+            </ul>
+
+            <h4>1.2 音声・テキストデータ</h4>
+            <ul>
+                <li>スピーキング練習時の音声認識によるテキストデータ</li>
+                <li>音声データはデバイス上でのみ処理され、サーバーには保存されません</li>
+            </ul>
+
+            <h4>1.3 学習データ</h4>
+            <ul>
+                <li>スピーキング速度（WPM）</li>
+                <li>練習履歴</li>
+                <li>AI評価結果</li>
+            </ul>
+
+            <h4>1.4 購入情報</h4>
+            <ul>
+                <li>サブスクリプションの購入状況</li>
+            </ul>
         </div>
-    </div>
 
-    <div class="section">
-        <h2>4. データの保存</h2>
-        <ul>
-            <li>学習履歴はデバイス上に保存されます</li>
-            <li>AI評価のために送信されたテキストデータはサーバーに保存されません</li>
-            <li>アカウント情報はFirebaseに安全に保存されます</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>5. データの削除</h2>
-        <p>アプリを削除することで、デバイス上のデータは全て削除されます。Firebaseに保存されたアカウント情報の削除を希望する場合は、下記の連絡先までお問い合わせください。</p>
-    </div>
-
-    <div class="section">
-        <h2>6. お子様のプライバシー</h2>
-        <p>本アプリは13歳未満のお子様を対象としていません。13歳未満のお子様から意図的に個人情報を収集することはありません。</p>
-    </div>
-
-    <div class="section">
-        <h2>7. プライバシーポリシーの変更</h2>
-        <p>本ポリシーは必要に応じて更新されることがあります。変更があった場合は、本ページを更新してお知らせします。</p>
-    </div>
-
-    <div class="section">
-        <h2>8. お問い合わせ</h2>
-        <div class="contact-box">
-            <p>プライバシーに関するご質問は、以下の連絡先までお問い合わせください。</p>
-            <p><strong>メール:</strong> <a href="mailto:takanobuwatanabe@gmail.com">takanobuwatanabe@gmail.com</a></p>
+        <div class="section">
+            <h3>2. 情報の利用目的</h3>
+            <p>収集した情報は以下の目的で利用します：</p>
+            <ul>
+                <li>ユーザー認証とアカウント管理</li>
+                <li>スピーキング内容のAI評価（Google Gemini APIを使用）</li>
+                <li>学習履歴の記録と表示</li>
+                <li>サブスクリプションの管理</li>
+                <li>アプリの改善</li>
+            </ul>
         </div>
-    </div>
+
+        <div class="section">
+            <h3>3. 第三者への情報提供</h3>
+            <p>本アプリは以下のサービスを利用しています：</p>
+            <ul>
+                <li><strong>Firebase（Google）</strong>: 認証、クラウド機能</li>
+                <li><strong>Google Gemini API</strong>: スピーキング内容の評価（テキストデータのみ送信）</li>
+                <li><strong>RevenueCat</strong>: サブスクリプション管理</li>
+                <li><strong>Apple</strong>: Sign In、App Store決済</li>
+            </ul>
+            <div class="important">
+                <strong>これらのサービス提供者以外の第三者に個人情報を販売・提供することはありません。</strong>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>4. データの保存</h3>
+            <ul>
+                <li>学習履歴はデバイス上に保存されます</li>
+                <li>AI評価のために送信されたテキストデータはサーバーに保存されません</li>
+                <li>アカウント情報はFirebaseに安全に保存されます</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>5. データの削除</h3>
+            <p>アプリを削除することで、デバイス上のデータは全て削除されます。Firebaseに保存されたアカウント情報の削除を希望する場合は、下記の連絡先までお問い合わせください。</p>
+        </div>
+
+        <div class="section">
+            <h3>6. お子様のプライバシー</h3>
+            <p>本アプリは13歳未満のお子様を対象としていません。13歳未満のお子様から意図的に個人情報を収集することはありません。</p>
+        </div>
+
+        <div class="section">
+            <h3>7. プライバシーポリシーの変更</h3>
+            <p>本ポリシーは必要に応じて更新されることがあります。変更があった場合は、本ページを更新してお知らせします。</p>
+        </div>
+
+        <div class="section">
+            <h3>8. お問い合わせ</h3>
+            <div class="contact-box">
+                <p>プライバシーに関するご質問は、以下の連絡先までお問い合わせください。</p>
+                <p><strong>メール:</strong> <a href="mailto:takanobuwatanabe@gmail.com">takanobuwatanabe@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <hr style="margin: 50px 0; border: none; border-top: 2px solid #ddd;">
+
+    <!-- English Version -->
+    <section id="english">
+        <h2>English Version</h2>
+
+        <p>This Privacy Policy explains how "WPM English Speaking" (the "App") handles your personal information.</p>
+
+        <div class="section">
+            <h3>1. Information We Collect</h3>
+
+            <h4>1.1 Account Information</h4>
+            <ul>
+                <li>User ID obtained through Apple Sign In</li>
+                <li>Email address (if provided via Apple Sign In)</li>
+            </ul>
+
+            <h4>1.2 Voice & Text Data</h4>
+            <ul>
+                <li>Text data from speech recognition during speaking practice</li>
+                <li>Voice data is processed only on the device and is not stored on servers</li>
+            </ul>
+
+            <h4>1.3 Learning Data</h4>
+            <ul>
+                <li>Speaking speed (WPM)</li>
+                <li>Practice history</li>
+                <li>AI evaluation results</li>
+            </ul>
+
+            <h4>1.4 Purchase Information</h4>
+            <ul>
+                <li>Subscription purchase status</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>2. Use of Information</h3>
+            <p>The collected information is used for the following purposes:</p>
+            <ul>
+                <li>User authentication and account management</li>
+                <li>AI evaluation of speaking content (using Google Gemini API)</li>
+                <li>Recording and displaying learning history</li>
+                <li>Subscription management</li>
+                <li>Improving the App</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>3. Third-Party Information Sharing</h3>
+            <p>The App uses the following services:</p>
+            <ul>
+                <li><strong>Firebase (Google)</strong>: Authentication, cloud functions</li>
+                <li><strong>Google Gemini API</strong>: Evaluation of speaking content (only text data is transmitted)</li>
+                <li><strong>RevenueCat</strong>: Subscription management</li>
+                <li><strong>Apple</strong>: Sign In, App Store payments</li>
+            </ul>
+            <div class="important">
+                <strong>We do not sell or provide personal information to any third parties other than these service providers.</strong>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>4. Data Storage</h3>
+            <ul>
+                <li>Learning history is stored on the device</li>
+                <li>Text data sent for AI evaluation is not stored on servers</li>
+                <li>Account information is securely stored in Firebase</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>5. Data Deletion</h3>
+            <p>Deleting the App will remove all data from your device. If you wish to delete account information stored in Firebase, please contact us using the information below.</p>
+        </div>
+
+        <div class="section">
+            <h3>6. Children's Privacy</h3>
+            <p>The App is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
+        </div>
+
+        <div class="section">
+            <h3>7. Changes to This Privacy Policy</h3>
+            <p>This policy may be updated as necessary. If there are changes, we will notify you by updating this page.</p>
+        </div>
+
+        <div class="section">
+            <h3>8. Contact Us</h3>
+            <div class="contact-box">
+                <p>If you have any questions about privacy, please contact us at:</p>
+                <p><strong>Email:</strong> <a href="mailto:takanobuwatanabe@gmail.com">takanobuwatanabe@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
 
     <div class="footer">
         <p>&copy; 2026 Takanobu Watanabe. All rights reserved.</p>
