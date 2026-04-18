@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>サポート - WPM英語スピーキング</title>
+  <title>サポート / Support - WPM英語スピーキング</title>
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 700px; margin: 0 auto; padding: 20px; line-height: 1.8; color: #333; }
     h1 { font-size: 1.5em; border-bottom: 2px solid #007AFF; padding-bottom: 8px; }
@@ -16,6 +16,7 @@
     .contact { background-color: #f0f7ff; padding: 12px 16px; border-left: 3px solid #007AFF; margin: 1em 0; }
     .note { background-color: #fff7e6; padding: 12px 16px; border-left: 3px solid #ff9500; margin: 1em 0; }
     a { color: #007AFF; }
+    hr.lang-divider { margin: 3em 0; border: none; border-top: 2px solid #ddd; }
   </style>
 </head>
 <body>
@@ -154,6 +155,145 @@
   <ul>
     <li><a href="privacy-policy.html">プライバシーポリシー</a></li>
     <li><a href="disclaimer.html">免責事項</a></li>
+  </ul>
+
+  <hr class="lang-divider">
+
+  <h1>Support</h1>
+  <p class="updated">Last Updated: April 18, 2026</p>
+  <p>This is the support page for "WPM English Speaking". If you have any trouble using the app, please check the relevant section on this page.</p>
+
+  <h2>Contact</h2>
+  <div class="contact">
+    <p>For questions, feedback, or bug reports, please email us at the address below.</p>
+    <ul>
+      <li><strong>Email</strong>: <a href="mailto:wbm650174@gmail.com">wbm650174@gmail.com</a></li>
+      <li>Please allow 2–3 business days for a reply</li>
+    </ul>
+    <p>Including the following information will help us resolve your issue faster:</p>
+    <ul>
+      <li>Device in use (e.g., iPhone 15 Pro)</li>
+      <li>iOS version</li>
+      <li>App version (can be found on the "About This App" screen)</li>
+      <li>Symptom or error message</li>
+    </ul>
+  </div>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>1. Subscription (Premium Membership)</h3>
+
+  <h4>Q. How do I cancel my Premium membership?</h4>
+  <p>A. You can navigate to the App Store subscription management screen from within the app.</p>
+  <ol>
+    <li>In the app: "About This App" → "Privacy & Data" → "Manage Subscription"</li>
+    <li>The iOS Settings app will open</li>
+    <li>Tap "Cancel Subscription"</li>
+  </ol>
+  <p>Or directly from the iPhone Settings app:</p>
+  <ol>
+    <li>Settings → Apple ID (your name at the top) → Subscriptions</li>
+    <li>Select "WPM English Speaking"</li>
+    <li>Tap "Cancel Subscription"</li>
+  </ol>
+
+  <h4>Q. Will I lose access immediately after canceling?</h4>
+  <p>A. After canceling, <strong>you can continue to use Premium features until the end of the current billing period</strong>. Auto-renewal will stop after that period ends.</p>
+
+  <h4>Q. Can I get a refund?</h4>
+  <p>A. Refunds follow Apple's policies. You can request a refund from the following Apple page:<br>
+  <a href="https://reportaproblem.apple.com/">https://reportaproblem.apple.com/</a></p>
+
+  <h4>Q. What is the daily limit for AI evaluations?</h4>
+  <p>A. Premium members can use AI evaluation <strong>up to 15 times per day</strong>. The limit resets daily at midnight Japan time.</p>
+
+  <h3>2. Account Deletion</h3>
+
+  <h4>Q. How do I delete my account?</h4>
+  <p>A. You can delete your account from within the app at any time.</p>
+  <ol>
+    <li>Open the "About This App" screen</li>
+    <li>Tap "Delete Account" in the "Privacy & Data" section</li>
+    <li>Select "Delete Account" in the confirmation alert</li>
+    <li>Reauthenticate with Apple Sign In</li>
+    <li>Deletion will be executed</li>
+  </ol>
+  <p>Data that will be deleted:</p>
+  <ul>
+    <li>Firebase Authentication account information</li>
+    <li>Usage count data on Firestore</li>
+    <li>Learning history on the device</li>
+  </ul>
+  <div class="note">
+    <strong>Note</strong>: If you have an active subscription, deleting your account will not automatically cancel it. Please follow the cancellation steps above separately.
+  </div>
+
+  <h3>3. Microphone & Speech Recognition</h3>
+
+  <h4>Q. "Please allow microphone access" is displayed</h4>
+  <p>A. Please grant permission from the iPhone Settings app.</p>
+  <ol>
+    <li>Settings → Privacy & Security → Microphone</li>
+    <li>Turn on "WPM English Speaking"</li>
+  </ol>
+
+  <h4>Q. Speech recognition is not responding</h4>
+  <p>A. Speech recognition permission is required.</p>
+  <ol>
+    <li>Settings → Privacy & Security → Speech Recognition</li>
+    <li>Turn on "WPM English Speaking"</li>
+  </ol>
+
+  <h4>Q. Recognition accuracy is poor</h4>
+  <p>A. Please try the following:</p>
+  <ul>
+    <li>Speak in a quiet environment</li>
+    <li>Speak close to the microphone (within 30 cm of your mouth)</li>
+    <li>Pronounce clearly</li>
+    <li>Use a high-quality microphone such as earphone mic</li>
+  </ul>
+
+  <h3>4. AI Evaluation</h3>
+
+  <div class="note">
+    <strong>⚠️ Notice When Using AI Evaluation</strong>
+    <p>When using the AI evaluation feature, <strong>the text of your speech is sent to an external API (Google Gemini)</strong>. Please note the following:</p>
+    <ul>
+      <li><strong>Do not speak information that can identify you personally</strong>, such as real names, addresses, phone numbers, or workplaces</li>
+      <li>Only the text converted from speech recognition is transmitted; the audio data itself is not sent</li>
+      <li>Google Gemini processes the data according to its data retention policy</li>
+    </ul>
+    <p>To protect your privacy, we recommend keeping your speech within the scope of English speaking practice.</p>
+  </div>
+
+  <h4>Q. AI evaluation returns an error</h4>
+  <p>A. Please check the following in order:</p>
+  <ol>
+    <li>Internet connection is active</li>
+    <li>You are signed in as a Premium member</li>
+    <li>You have not reached today's usage limit (15 times)</li>
+    <li>Restart the app and try again</li>
+  </ol>
+  <p>If the issue persists, please contact us.</p>
+
+  <h4>Q. Is the AI evaluation accurate?</h4>
+  <p>A. This app uses Google Gemini AI for evaluation. AI evaluation results are designed as a learning reference and are not definitive answers. Please use multiple evaluations to identify trends and use them as a guide for your studies.</p>
+
+  <h3>5. Other</h3>
+
+  <h4>Q. I want to clear my speaking history</h4>
+  <p>A. You can reset all records from the "Data Management" section of the "About This App" screen.</p>
+
+  <h4>Q. Is audio data stored?</h4>
+  <p>A. Audio data is processed on the device and <strong>is not transmitted to or stored on servers</strong>. Only text data converted by speech recognition is sent to the Google Gemini API for AI evaluation.</p>
+
+  <h4>Q. Can I use this app for free?</h4>
+  <p>A. All basic features (recording, WPM measurement, topics, model answers, practice history) are available for free. Only AI speaking evaluation is a Premium feature (500 JPY / month).</p>
+
+  <h2>Related Links</h2>
+  <ul>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    <li><a href="disclaimer.html">Disclaimer</a></li>
   </ul>
 
 </body>
