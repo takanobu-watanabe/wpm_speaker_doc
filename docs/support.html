@@ -47,7 +47,7 @@
   <h4>Q. プレミアム会員を解約するには？</h4>
   <p>A. アプリ内から App Store のサブスクリプション管理画面に遷移できます。</p>
   <ol>
-    <li>アプリ内「このアプリについて」→「プライバシーとデータ」→「サブスクリプションの管理」</li>
+    <li>アプリ内「このアプリについて」→「プレミアム」セクション →「サブスクリプションの管理」</li>
     <li>iOS の設定アプリが開きます</li>
     <li>「サブスクリプションをキャンセル」をタップ</li>
   </ol>
@@ -68,25 +68,26 @@
   <h4>Q. 1日のAI評価の上限は？</h4>
   <p>A. プレミアム会員の方は <strong>1日あたり15回</strong>まで AI 評価をご利用いただけます。上限は毎日日本時間の午前0時にリセットされます。</p>
 
-  <h3>2. アカウント削除について</h3>
+  <h4>Q. アプリを再インストールしたら購入内容が消えました</h4>
+  <p>A. 購入済みの方は、Paywall（購入画面）の「購入を復元」ボタンで復元できます。同じ Apple ID でサインインしている端末であれば、自動的に復元されます。</p>
 
-  <h4>Q. アカウントを削除するには？</h4>
+  <h3>2. アカウント・データ削除について</h3>
+
+  <h4>Q. アプリに保存されているデータを削除したい</h4>
   <p>A. アプリ内からいつでも削除可能です。</p>
   <ol>
     <li>「このアプリについて」画面を開く</li>
     <li>「プライバシーとデータ」セクションの「アカウントを削除」をタップ</li>
     <li>確認アラートで「アカウントを削除」を選択</li>
-    <li>Apple Sign In で本人確認（再認証）を行う</li>
     <li>削除が実行されます</li>
   </ol>
   <p>削除されるデータ：</p>
   <ul>
-    <li>Firebase Authentication のアカウント情報</li>
-    <li>Firestore 上の利用回数データ</li>
-    <li>デバイス上の学習履歴</li>
+    <li>アプリ内の利用状況データ</li>
+    <li>デバイス上の練習履歴</li>
   </ul>
   <div class="note">
-    <strong>注意</strong>: サブスクリプション加入中の場合、アカウント削除だけでは自動解約されません。上記の解約手順を別途実行してください。
+    <strong>注意</strong>: サブスクリプション加入中の場合、データ削除だけでは自動解約されません。上記の解約手順を別途実行してください。
   </div>
 
   <h3>3. マイク・音声認識について</h3>
@@ -122,7 +123,6 @@
     <ul>
       <li><strong>実名・住所・電話番号・勤務先など、個人を特定できる情報は発話しない</strong>でください</li>
       <li>送信されるのは音声認識によりテキスト化された内容のみで、音声データ自体は送信されません</li>
-      <li>送信先の Google Gemini はデータ保持ポリシーに従って処理されます</li>
     </ul>
     <p>プライバシーを守るため、英語スピーキング練習の範囲内で発話することをおすすめします。</p>
   </div>
@@ -131,7 +131,7 @@
   <p>A. 以下を順に確認してください：</p>
   <ol>
     <li>インターネット接続が有効か</li>
-    <li>プレミアム会員にサインインしているか</li>
+    <li>プレミアム会員であるか（未加入の場合は Paywall が表示されます）</li>
     <li>本日の利用回数上限（15回）に達していないか</li>
     <li>アプリを再起動してもう一度試す</li>
   </ol>
@@ -140,7 +140,18 @@
   <h4>Q. AI評価の内容は正確ですか？</h4>
   <p>A. 本アプリは Google Gemini AI を使用して評価を行っています。AI の評価結果はあくまで学習の参考として設計されており、絶対的な正解ではありません。複数回の評価を通じて傾向を把握し、学習の指針としてご活用ください。</p>
 
-  <h3>5. その他</h3>
+  <h3>5. 多端末利用について</h3>
+
+  <h4>Q. iPhone と iPad の両方で使いたい</h4>
+  <p>A. 同じ Apple ID でサインインしている端末であれば、購入内容は自動的に共有されます。</p>
+  <ol>
+    <li>iPad でアプリをインストールして起動</li>
+    <li>Paywall（購入画面）を開き「購入を復元」をタップ</li>
+    <li>プレミアム機能が有効になります</li>
+  </ol>
+  <p>また、「このアプリについて」→「プライバシーとデータ」から Apple アカウントでサインインすると、利用状況データも端末間で共有されます（任意）。</p>
+
+  <h3>6. その他</h3>
 
   <h4>Q. スピーキング履歴を消したい</h4>
   <p>A. 「このアプリについて」画面の「データ管理」セクションから、すべての記録をリセットできます。</p>
@@ -186,7 +197,7 @@
   <h4>Q. How do I cancel my Premium membership?</h4>
   <p>A. You can navigate to the App Store subscription management screen from within the app.</p>
   <ol>
-    <li>In the app: "About This App" → "Privacy & Data" → "Manage Subscription"</li>
+    <li>In the app: "About This App" → "Premium" section → "Manage Subscription"</li>
     <li>The iOS Settings app will open</li>
     <li>Tap "Cancel Subscription"</li>
   </ol>
@@ -207,25 +218,26 @@
   <h4>Q. What is the daily limit for AI evaluations?</h4>
   <p>A. Premium members can use AI evaluation <strong>up to 15 times per day</strong>. The limit resets daily at midnight Japan time.</p>
 
-  <h3>2. Account Deletion</h3>
+  <h4>Q. I reinstalled the app and my purchase is gone</h4>
+  <p>A. If you already purchased, tap the "Restore Purchases" button on the Paywall screen. Devices signed in with the same Apple ID will restore automatically.</p>
 
-  <h4>Q. How do I delete my account?</h4>
-  <p>A. You can delete your account from within the app at any time.</p>
+  <h3>2. Account & Data Deletion</h3>
+
+  <h4>Q. I want to delete data stored in the app</h4>
+  <p>A. You can delete your data from within the app at any time.</p>
   <ol>
     <li>Open the "About This App" screen</li>
     <li>Tap "Delete Account" in the "Privacy & Data" section</li>
     <li>Select "Delete Account" in the confirmation alert</li>
-    <li>Reauthenticate with Apple Sign In</li>
     <li>Deletion will be executed</li>
   </ol>
   <p>Data that will be deleted:</p>
   <ul>
-    <li>Firebase Authentication account information</li>
-    <li>Usage count data on Firestore</li>
-    <li>Learning history on the device</li>
+    <li>Usage data stored in the app</li>
+    <li>Practice history on the device</li>
   </ul>
   <div class="note">
-    <strong>Note</strong>: If you have an active subscription, deleting your account will not automatically cancel it. Please follow the cancellation steps above separately.
+    <strong>Note</strong>: If you have an active subscription, deleting your data will not automatically cancel it. Please follow the cancellation steps above separately.
   </div>
 
   <h3>3. Microphone & Speech Recognition</h3>
@@ -261,7 +273,6 @@
     <ul>
       <li><strong>Do not speak information that can identify you personally</strong>, such as real names, addresses, phone numbers, or workplaces</li>
       <li>Only the text converted from speech recognition is transmitted; the audio data itself is not sent</li>
-      <li>Google Gemini processes the data according to its data retention policy</li>
     </ul>
     <p>To protect your privacy, we recommend keeping your speech within the scope of English speaking practice.</p>
   </div>
@@ -270,7 +281,7 @@
   <p>A. Please check the following in order:</p>
   <ol>
     <li>Internet connection is active</li>
-    <li>You are signed in as a Premium member</li>
+    <li>You are a Premium member (if not, the Paywall will appear)</li>
     <li>You have not reached today's usage limit (15 times)</li>
     <li>Restart the app and try again</li>
   </ol>
@@ -279,7 +290,18 @@
   <h4>Q. Is the AI evaluation accurate?</h4>
   <p>A. This app uses Google Gemini AI for evaluation. AI evaluation results are designed as a learning reference and are not definitive answers. Please use multiple evaluations to identify trends and use them as a guide for your studies.</p>
 
-  <h3>5. Other</h3>
+  <h3>5. Multi-Device Usage</h3>
+
+  <h4>Q. I want to use the app on both iPhone and iPad</h4>
+  <p>A. If you are signed in with the same Apple ID on both devices, purchased content is shared automatically.</p>
+  <ol>
+    <li>Install and launch the app on your iPad</li>
+    <li>Open the Paywall screen and tap "Restore Purchases"</li>
+    <li>Premium features will become available</li>
+  </ol>
+  <p>Additionally, you can sign in with Apple from "About This App" → "Privacy & Data" to share usage data across devices (optional).</p>
+
+  <h3>6. Other</h3>
 
   <h4>Q. I want to clear my speaking history</h4>
   <p>A. You can reset all records from the "Data Management" section of the "About This App" screen.</p>
