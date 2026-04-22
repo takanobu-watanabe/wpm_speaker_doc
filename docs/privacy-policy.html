@@ -16,7 +16,7 @@
 </head>
 <body>
   <h1>プライバシーポリシー</h1>
-  <p class="updated">最終更新日: 2026年4月19日</p>
+  <p class="updated">最終更新日: 2026年4月22日</p>
   <p>「WPM英語スピーキング」（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。本プライバシーポリシーは、本アプリが収集する情報とその利用方法について説明します。</p>
 
   <h2>1. 収集する情報</h2>
@@ -31,14 +31,19 @@
   <p>複数の端末で購入内容を利用するために、ユーザーが任意で「Sign in with Apple」でサインインした場合のみ、以下の情報を取得します：</p>
   <ul>
     <li>ユーザー識別子（Sign in with Apple が発行する匿名化されたID）</li>
+    <li>メールアドレス（ユーザーが共有を選択した場合のみ。非公開を選択した場合は Apple のプロキシメールアドレス）</li>
+    <li>氏名（ユーザーが共有を選択した場合のみ）</li>
   </ul>
   <p>サインインは任意であり、本アプリの機能はサインインなしでもご利用いただけます。サインインしない場合、上記の情報は取得されません。</p>
 
   <h3>1.3 音声・テキストデータ</h3>
   <ul>
     <li>スピーキング練習時の音声認識によるテキストデータ</li>
-    <li>音声データはデバイス上でのみ処理され、サーバーには保存されません</li>
+    <li>無料機能のスピーキング練習における音声データは、デバイス上でのみ処理され、サーバーには保存されません</li>
+    <li>プレミアム会員のAI評価機能を利用する場合のみ、より高精度な書き起こしのため、録音した音声データ（最長180秒）が一時的に OpenAI Whisper API に送信されます。送信された音声は書き起こし処理にのみ用いられ、サーバーには保存されません</li>
   </ul>
+  <p><strong>⚠️ 重要なご注意:</strong> スピーキング練習で発話された内容は、音声認識によりテキスト化され、AI評価のため Google Gemini API に送信されます。プレミアム会員のAI評価利用時は、音声データそのものも OpenAI Whisper API に送信されます。<strong>ご自身やご家族・ご友人等の氏名、住所、電話番号、メールアドレス、クレジットカード番号、その他の個人情報・機密情報を発話しないでください。</strong>利用者が発話した内容に起因する情報漏えい等について、開発者は責任を負いません。</p>
+
   <h3>1.4 購入情報</h3>
   <ul>
     <li>サブスクリプションの購入履歴（加入状況、開始日、更新状態）</li>
@@ -55,7 +60,18 @@
   </ul>
   <p>収集した情報を広告やマーケティング目的で利用することはありません。また、第三者による追跡（トラッキング）も行いません。</p>
 
-  <h2>3. データの保存</h2>
+  <h2>3. 第三者サービス</h2>
+  <p>本アプリは以下の外部サービスを利用しています：</p>
+  <ul>
+    <li><strong>Firebase（Google LLC）</strong>: 認証、利用状況管理、バックエンド処理。</li>
+    <li><strong>Google Gemini API（Google LLC）</strong>: スピーキング内容のAI評価。テキストデータのみ送信されます。</li>
+    <li><strong>OpenAI API（OpenAI, L.L.C.）</strong>: プレミアム会員のAI評価利用時のみ、より高精度な音声書き起こし（Whisper）のため、録音音声データを送信します。OpenAI のデータ利用方針に基づき、API 経由で送信された音声はモデル学習には用いられません。</li>
+    <li><strong>RevenueCat Inc.</strong>: サブスクリプション管理。</li>
+    <li><strong>Apple Inc.</strong>: Sign in with Apple、App Store決済。</li>
+  </ul>
+  <p>これらのサービス提供者以外の第三者に個人情報を販売・提供することはありません。</p>
+
+  <h2>4. データの保存</h2>
   <ul>
     <li>練習履歴は、ご利用中の端末上にのみ保存されます</li>
     <li>AI評価のために送信されたテキストデータは、本アプリのサーバーには保存されません</li>
@@ -63,7 +79,7 @@
     <li>データは、アプリを継続してご利用いただく間、または法令上必要な期間保持されます</li>
   </ul>
 
-  <h2>4. データの削除</h2>
+  <h2>5. データの削除</h2>
   <p>以下のいずれかの方法でデータを削除できます：</p>
   <ul>
     <li><strong>アプリ内から削除</strong>: 「このアプリについて」→「プライバシーとデータ」→「アカウントを削除」をタップすると、Firebase に保存されたユーザーデータおよび利用回数データが削除されます</li>
@@ -72,7 +88,7 @@
   </ul>
   <p>サブスクリプション加入中の方は、アカウント削除前または後に別途 iOS の「設定」→「Apple ID」→「サブスクリプション」から解約が必要です。</p>
 
-  <h2>5. ユーザーの権利</h2>
+  <h2>6. ユーザーの権利</h2>
   <p>ユーザーは以下の権利を有します：</p>
   <ul>
     <li>自身の個人情報の開示を請求する権利</li>
@@ -82,7 +98,7 @@
   </ul>
   <p>これらの請求を行う場合は、下記の連絡先までお問い合わせください。</p>
 
-  <h2>6. セキュリティ</h2>
+  <h2>7. セキュリティ</h2>
   <p>本アプリは、収集した情報を適切に保護するため、以下のセキュリティ対策を講じています：</p>
   <ul>
     <li>サーバーとの通信は SSL/TLS による暗号化</li>
@@ -90,13 +106,13 @@
     <li>アクセス制御による不正アクセスの防止</li>
   </ul>
 
-  <h2>7. お子様のプライバシー</h2>
+  <h2>8. お子様のプライバシー</h2>
   <p>本アプリは13歳未満のお子様を対象としていません。13歳未満のお子様から意図的に個人情報を収集することはありません。</p>
 
-  <h2>8. プライバシーポリシーの変更</h2>
+  <h2>9. プライバシーポリシーの変更</h2>
   <p>本ポリシーは必要に応じて更新されることがあります。重要な変更があった場合は、本ページの最終更新日を更新してお知らせします。本アプリを継続してご利用いただくことにより、更新後のポリシーに同意いただいたものとみなします。</p>
 
-  <h2>9. お問い合わせ</h2>
+  <h2>10. お問い合わせ</h2>
   <p>プライバシーに関するご質問・ご請求は、以下の連絡先までお問い合わせください。</p>
   <p>メール: <a href="mailto:wbm650174@gmail.com">wbm650174@gmail.com</a></p>
 
@@ -105,7 +121,7 @@
   <hr class="lang-divider">
 
   <h1>Privacy Policy</h1>
-  <p class="updated">Last Updated: April 19, 2026</p>
+  <p class="updated">Last Updated: April 22, 2026</p>
   <p>"WPM English Speaking" (the "App") respects user privacy and is committed to protecting personal information. This Privacy Policy describes the information the App collects and how it is used.</p>
 
   <h2>1. Information We Collect</h2>
@@ -120,14 +136,19 @@
   <p>Only if you choose to sign in with "Sign in with Apple" to access purchased content across multiple devices, we obtain the following:</p>
   <ul>
     <li>User identifier (the anonymized ID issued by Sign in with Apple)</li>
+    <li>Email address (only if you chose to share it; a proxy email is used if you chose to hide it)</li>
+    <li>Name (only if you chose to share it)</li>
   </ul>
   <p>Sign-in is optional, and the App's features can be used without signing in. If you do not sign in, the above information is not collected.</p>
 
   <h3>1.3 Voice & Text Data</h3>
   <ul>
     <li>Text data from speech recognition during speaking practice</li>
-    <li>Voice data is processed only on the device and is not stored on servers</li>
+    <li>For free features, voice data is processed only on the device and is not stored on servers</li>
+    <li>For Premium members using the AI evaluation feature, the recorded audio (up to 180 seconds) is temporarily transmitted to the OpenAI Whisper API to produce a higher-accuracy transcript. The transmitted audio is used solely for transcription and is not retained on servers</li>
   </ul>
+  <p><strong>⚠️ Important Notice:</strong> Content spoken during speaking practice is converted to text via speech recognition and sent to the Google Gemini API for AI evaluation. When Premium members use AI evaluation, the audio data itself is also sent to the OpenAI Whisper API. <strong>Please do not speak personal or confidential information such as your own or others' names, addresses, phone numbers, email addresses, credit card numbers, or any other sensitive information.</strong> The developer is not responsible for any information leakage resulting from the content spoken by the user.</p>
+
   <h3>1.4 Purchase Information</h3>
   <ul>
     <li>Subscription purchase history (enrollment status, start date, renewal status)</li>
@@ -144,7 +165,18 @@
   </ul>
   <p>We do not use collected information for advertising or marketing purposes, nor do we engage in third-party tracking.</p>
 
-  <h2>3. Data Storage</h2>
+  <h2>3. Third-Party Services</h2>
+  <p>The App uses the following external services:</p>
+  <ul>
+    <li><strong>Firebase (Google LLC)</strong>: Authentication, usage management, backend processing.</li>
+    <li><strong>Google Gemini API (Google LLC)</strong>: AI evaluation of speaking content. Only text data is transmitted.</li>
+    <li><strong>OpenAI API (OpenAI, L.L.C.)</strong>: Used only when Premium members invoke AI evaluation, to send recorded audio for higher-accuracy transcription via Whisper. Per OpenAI's API data usage policy, audio submitted via the API is not used for model training.</li>
+    <li><strong>RevenueCat Inc.</strong>: Subscription management.</li>
+    <li><strong>Apple Inc.</strong>: Sign in with Apple, App Store payments.</li>
+  </ul>
+  <p>We do not sell or provide personal information to any third parties other than these service providers.</p>
+
+  <h2>4. Data Storage</h2>
   <ul>
     <li>Practice history is stored only on the device in use</li>
     <li>Text data sent for AI evaluation is not stored on our servers</li>
@@ -152,7 +184,7 @@
     <li>Data is retained for as long as you continue to use the app or as required by law</li>
   </ul>
 
-  <h2>4. Data Deletion</h2>
+  <h2>5. Data Deletion</h2>
   <p>You can delete your data using any of the following methods:</p>
   <ul>
     <li><strong>Delete in-app</strong>: Navigate to "About This App" → "Privacy & Data" → "Delete Account" to remove the user data and usage count data stored in Firebase</li>
@@ -161,7 +193,7 @@
   </ul>
   <p>If you have an active subscription, please cancel it separately via iOS Settings → Apple ID → Subscriptions, either before or after account deletion.</p>
 
-  <h2>5. User Rights</h2>
+  <h2>6. User Rights</h2>
   <p>Users have the following rights:</p>
   <ul>
     <li>The right to request disclosure of their personal information</li>
@@ -171,7 +203,7 @@
   </ul>
   <p>To exercise these rights, please contact us using the information below.</p>
 
-  <h2>6. Security</h2>
+  <h2>7. Security</h2>
   <p>The App takes the following security measures to appropriately protect the collected information:</p>
   <ul>
     <li>Communication with servers is encrypted via SSL/TLS</li>
@@ -179,13 +211,13 @@
     <li>Access control to prevent unauthorized access</li>
   </ul>
 
-  <h2>7. Children's Privacy</h2>
+  <h2>8. Children's Privacy</h2>
   <p>The App is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
 
-  <h2>8. Changes to This Privacy Policy</h2>
+  <h2>9. Changes to This Privacy Policy</h2>
   <p>This policy may be updated as necessary. If there are significant changes, we will notify you by updating the "Last Updated" date on this page. Your continued use of the App constitutes your agreement to the updated policy.</p>
 
-  <h2>9. Contact Us</h2>
+  <h2>10. Contact Us</h2>
   <p>If you have any questions or requests regarding privacy, please contact us at:</p>
   <p>Email: <a href="mailto:wbm650174@gmail.com">wbm650174@gmail.com</a></p>
 

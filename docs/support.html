@@ -21,7 +21,7 @@
 </head>
 <body>
   <h1>サポート</h1>
-  <p class="updated">最終更新日: 2026年4月20日</p>
+  <p class="updated">最終更新日: 2026年4月22日</p>
   <p>「WPM英語スピーキング」のサポートページです。アプリのご利用で困ったことがあれば、このページの該当項目をご確認ください。</p>
 
   <h2>お問い合わせ</h2>
@@ -124,10 +124,10 @@
 
   <div class="note">
     <strong>⚠️ AI評価機能ご利用時の注意</strong>
-    <p>AI評価機能をご利用の際、<strong>発話内容のテキストが外部API（Google Gemini）に送信されます</strong>。以下の点にご注意ください：</p>
+    <p>AI評価機能（プレミアム）をご利用の際、<strong>発話内容のテキストが外部API（Google Gemini）に、録音音声が外部API（OpenAI Whisper）にそれぞれ送信されます</strong>。以下の点にご注意ください：</p>
     <ul>
       <li><strong>実名・住所・電話番号・勤務先など、個人を特定できる情報は発話しない</strong>でください</li>
-      <li>送信されるのは音声認識によりテキスト化された内容のみで、音声データ自体は送信されません</li>
+      <li>送信されるデータは書き起こし・評価処理にのみ使用され、各サービス側でモデル学習等の二次利用は行われません</li>
     </ul>
     <p>プライバシーを守るため、英語スピーキング練習の範囲内で発話することをおすすめします。</p>
   </div>
@@ -143,7 +143,7 @@
   <p>解消しない場合は、お問い合わせください。</p>
 
   <h4>Q. AI評価の内容は正確ですか？</h4>
-  <p>A. 本アプリは Google Gemini AI を使用して評価を行っています。AI の評価結果はあくまで学習の参考として設計されており、絶対的な正解ではありません。複数回の評価を通じて傾向を把握し、学習の指針としてご活用ください。</p>
+  <p>A. 本アプリは音声書き起こしに OpenAI Whisper、評価生成に Google Gemini AI を使用しています。AI の評価結果はあくまで学習の参考として設計されており、絶対的な正解ではありません。複数回の評価を通じて傾向を把握し、学習の指針としてご活用ください。</p>
 
   <h3>5. 多端末利用について</h3>
 
@@ -184,7 +184,7 @@
   <p>A. 「このアプリについて」画面の「データ管理」セクションから、すべての記録をリセットできます。</p>
 
   <h4>Q. 音声データは保存されますか？</h4>
-  <p>A. 音声データはデバイス上で処理され、<strong>サーバーには送信・保存されません</strong>。AI 評価のために Google Gemini API に送信されるのは、音声認識により変換されたテキストデータのみです。</p>
+  <p>A. 通常のスピーキング練習では音声データはデバイス上でのみ処理され、サーバーには送信・保存されません。<strong>プレミアム会員のAI評価機能をご利用の場合のみ</strong>、より高精度な書き起こしのため、録音音声（最長180秒）が一時的に OpenAI Whisper API に送信されます。送信された音声は書き起こし処理にのみ用いられ、サーバーには保存されません。</p>
 
   <h4>Q. このアプリは無料で使えますか？</h4>
   <p>A. 基本機能（録音、WPM計測、トピック、模範解答、練習履歴）はすべて無料でご利用いただけます。AI によるスピーキング評価のみがプレミアム機能（月額 500 円）となります。</p>
@@ -198,7 +198,7 @@
   <hr class="lang-divider">
 
   <h1>Support</h1>
-  <p class="updated">Last Updated: April 20, 2026</p>
+  <p class="updated">Last Updated: April 22, 2026</p>
   <p>This is the support page for "WPM English Speaking". If you have any trouble using the app, please check the relevant section on this page.</p>
 
   <h2>Contact</h2>
@@ -301,10 +301,10 @@
 
   <div class="note">
     <strong>⚠️ Notice When Using AI Evaluation</strong>
-    <p>When using the AI evaluation feature, <strong>the text of your speech is sent to an external API (Google Gemini)</strong>. Please note the following:</p>
+    <p>When using the AI evaluation feature (Premium), <strong>the text of your speech is sent to an external API (Google Gemini), and the recorded audio is sent to an external API (OpenAI Whisper)</strong>. Please note the following:</p>
     <ul>
       <li><strong>Do not speak information that can identify you personally</strong>, such as real names, addresses, phone numbers, or workplaces</li>
-      <li>Only the text converted from speech recognition is transmitted; the audio data itself is not sent</li>
+      <li>Transmitted data is used only for transcription and evaluation; it is not used by the providers for model training or other secondary purposes</li>
     </ul>
     <p>To protect your privacy, we recommend keeping your speech within the scope of English speaking practice.</p>
   </div>
@@ -320,7 +320,7 @@
   <p>If the issue persists, please contact us.</p>
 
   <h4>Q. Is the AI evaluation accurate?</h4>
-  <p>A. This app uses Google Gemini AI for evaluation. AI evaluation results are designed as a learning reference and are not definitive answers. Please use multiple evaluations to identify trends and use them as a guide for your studies.</p>
+  <p>A. This app uses OpenAI Whisper for speech transcription and Google Gemini AI for evaluation. AI evaluation results are designed as a learning reference and are not definitive answers. Please use multiple evaluations to identify trends and use them as a guide for your studies.</p>
 
   <h3>5. Multi-Device Usage</h3>
 
@@ -361,7 +361,7 @@
   <p>A. You can reset all records from the "Data Management" section of the "About This App" screen.</p>
 
   <h4>Q. Is audio data stored?</h4>
-  <p>A. Audio data is processed on the device and <strong>is not transmitted to or stored on servers</strong>. Only text data converted by speech recognition is sent to the Google Gemini API for AI evaluation.</p>
+  <p>A. For regular speaking practice, audio data is processed only on the device and is not transmitted to or stored on servers. <strong>Only when Premium members use the AI evaluation feature</strong>, the recorded audio (up to 180 seconds) is temporarily transmitted to the OpenAI Whisper API for higher-accuracy transcription. The transmitted audio is used solely for transcription and is not retained on servers.</p>
 
   <h4>Q. Can I use this app for free?</h4>
   <p>A. All basic features (recording, WPM measurement, topics, model answers, practice history) are available for free. Only AI speaking evaluation is a Premium feature (500 JPY / month).</p>
